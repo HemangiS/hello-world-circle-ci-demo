@@ -1,0 +1,36 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  text-align: center;
+  min-height: 850px;
+  height: 850px;
+  max-height: 850px;
+}
+
+/*html {
+  min-height: 1080px;
+  height: 1080px;
+  max-height: 1080px;
+}*/
+
+a {
+  color: #00B7FF;
+}
+
+.my-table-custom-bg {
+  background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url('../images/bg.jpg');
+
+}
+
+.my-custom-table-style {
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.div-custom-style {
+  height: 80%;
+  overflow-y: scroll;
+}
