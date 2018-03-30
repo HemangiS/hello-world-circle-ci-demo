@@ -1,10 +1,11 @@
 #!/bin/bash
 
-JSON_SRC=`git diff HEAD^ HEAD --name-only -- '*.json'`;
+JSON_SRC=`git diff HEAD^ HEAD --name-only --diff-filter=ACMRTXBU '*.json'`;
 
 for f in ${JSON_SRC};
 do
-  jsonlint $f
+  echo $f
+  jsonlint $f -q
   retval=$?
   if [[ $retval -eq 0 ]]
   then
