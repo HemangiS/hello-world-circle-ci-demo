@@ -13,7 +13,7 @@ jobs:
       - checkout
       - run:
           name: Install jsonlint
-          command: npm install jsonlint -g
+          command: sudo npm install jsonlint -g
       - run:
           name: To grant execute permission
           command: chmod 777 ./checkJson.sh
