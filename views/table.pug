@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  div.div-custom-style
+    table#table-responsive.table.table-striped.my-custom-table-style(height='80%', data-toggle='table', data-url='', data-sort-order='desc')
+      caption List of Users
+      thead
+        tr
+          th Name
+          th City
+      each Record in data
+        tr
+          td=Record.Name
+          td=Record.City
